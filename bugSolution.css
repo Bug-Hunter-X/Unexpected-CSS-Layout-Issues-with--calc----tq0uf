@@ -1,0 +1,35 @@
+/* bugSolution.css */
+
+/* Correct usage of calc(): ensure parent has defined dimensions */
+.parent {
+  width: 500px; /* Explicitly set parent width */
+}
+
+.child {
+  width: calc(100% - 20px);
+  background-color: lightblue;
+  padding: 10px;
+}
+
+/* Alternative approach: using percentages without calc()  */
+.parent2 {
+  width: 80%;
+}
+
+.child2 {
+  width: 80%;
+  margin: 0 10%;
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+/*  Another alternative using viewport units (vw) for better responsiveness */
+.parent3 {
+  width: 100vw;
+}
+
+.child3 {
+  width: calc(100vw - 40px);
+  background-color: lightcoral;
+  padding: 20px;
+}
